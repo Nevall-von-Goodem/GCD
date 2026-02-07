@@ -8,7 +8,7 @@
         "squizlabs/php_codesniffer": "^4.0"
     },
     "license": "MIT",
-    "bin": ["bin/GCD"],
+    "bin": ["bin/GCD.php"],
     "autoload": {
         "files": [
             "src/Controller.php",
