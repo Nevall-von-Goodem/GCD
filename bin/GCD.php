@@ -3,7 +3,14 @@
 
 declare(strict_types=1);
 
-require __DIR__ . '/../vendor/autoload.php';
+$autoloadDev = __DIR__ . '/../vendor/autoload.php';
+$autoloadInstalled = __DIR__ . '/../../../autoload.php';
+
+if (file_exists($autoloadDev)) {
+    require $autoloadDev;
+} else {
+    require $autoloadInstalled;
+}
 
 use function NevallvonGoodem\GCD\Controller\startGame;
 
